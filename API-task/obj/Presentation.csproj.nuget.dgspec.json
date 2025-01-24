@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\API-task\\Presentation.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\API\\API-task\\Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\API-task\\Presentation.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\API\\API-task\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\API-task\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\API\\API-task\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\API-task\\Presentation.csproj",
-        "packagesPath": "C:\\Users\\AzComp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\API-task\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\API\\API-task\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\API\\API-task\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AzComp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Business\\Business.csproj"
+              "C:\\Users\\ASUS\\Desktop\\API\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\API\\Business\\Business.csproj"
               }
             }
           }
@@ -43,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -105,21 +110,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Business\\Business.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\API\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\API\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\AzComp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Business\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\API\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\API\\Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AzComp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -133,11 +142,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Common\\Common.csproj"
+              "C:\\Users\\ASUS\\Desktop\\API\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\API\\Common\\Common.csproj"
               },
-              "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Data\\Data.csproj"
+              "C:\\Users\\ASUS\\Desktop\\API\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\API\\Data\\Data.csproj"
               }
             }
           }
@@ -151,7 +160,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -210,21 +220,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Common\\Common.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\API\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\API\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\AzComp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Common\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\API\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\API\\Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AzComp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -249,7 +263,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -300,21 +315,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Data\\Data.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\API\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\API\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\AzComp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Data\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\API\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\API\\Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AzComp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -328,8 +347,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\AzComp\\Desktop\\MVC\\API-task\\Common\\Common.csproj"
+              "C:\\Users\\ASUS\\Desktop\\API\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\API\\Common\\Common.csproj"
               }
             }
           }
@@ -343,7 +362,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -394,7 +414,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

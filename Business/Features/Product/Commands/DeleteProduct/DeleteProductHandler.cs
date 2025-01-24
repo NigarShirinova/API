@@ -29,14 +29,14 @@ namespace Business.Features.Product.Commands.DeleteProduct
 		{
 			var product = await _productReadRepository.GetAsync(request.Id);
 			if (product is null)
-				throw new NotFoundException("Product is not found");
+				throw new NotFoundException("Product tapilmadi");
 
 			_productWriteRepository.Delete(product);
 			await _unitOfWork.CommitAsync();
 
 			return new Response()
 			{
-				Message = "Product deleted successfully"
+				Message = "Product ugurla silindi"
 			};
 		}
 	}

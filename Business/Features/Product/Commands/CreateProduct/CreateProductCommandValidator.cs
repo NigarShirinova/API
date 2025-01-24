@@ -32,6 +32,9 @@ namespace Business.Features.Product.Commands.CreateProduct
                 .IsInEnum()
                 .WithMessage("Tip yalnisdir");
 
+            RuleFor(x => x.Photo)
+                .NotEmpty()
+                .WithMessage("Sekil daxil edilmelidir");
         }
 
     }
