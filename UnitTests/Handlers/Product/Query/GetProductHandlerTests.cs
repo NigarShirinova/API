@@ -52,9 +52,14 @@ namespace UnitTests.Handlers.Product.Query
             var request = new GetProductQuery { Id = It.IsAny<int>() };
             var product = new Common.Entities.Product();
             var productDto = new ProductDto();
+
+            _productReadRepository.Setup(x => x.GetAsync(request.Id))
+                .ReturnsAsync(product);
+
+            _mapper.Setup(x => x.Map<ProductDto>(product))
+                .Returns(productDto);
             //Act
             var response = await _handler.Handle(request, It.IsAny<CancellationToken>());
-
 
             //Assert
             Assert.IsType<Response<ProductDto>>(response);

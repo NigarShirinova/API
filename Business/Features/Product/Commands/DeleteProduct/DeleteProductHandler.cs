@@ -29,7 +29,7 @@ namespace Business.Features.Product.Commands.DeleteProduct
 		{
 			var product = await _productReadRepository.GetAsync(request.Id);
 			if (product is null)
-				throw new NotFoundException("Product tapilmadi");
+				throw new Common.Exceptions.NotFoundException("Product tapilmadi");
 
 			_productWriteRepository.Delete(product);
 			await _unitOfWork.CommitAsync();

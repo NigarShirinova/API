@@ -12,7 +12,7 @@ namespace UnitTests.MockData.Product.CreateProductHandler
         public static CreateProductCommand CreateProductCommandV1 = new CreateProductCommand
         {
             Name = "Mehsul",
-            Description = "Description",
+            Description = "DescriptionDescriptionDescriptionDescriptionDescription",
             Price = 10,
             Quantity = 1,
             Type = Common.Constants.ProductType.New
@@ -22,7 +22,7 @@ namespace UnitTests.MockData.Product.CreateProductHandler
         public static CreateProductCommand CreateProductCommandV2 = new CreateProductCommand
         {
             Name = "Mehsul",
-            Description = "Description",
+            Description = "DescriptionDescriptionDescriptionDescriptionDescription",
             Price = 10,
             Quantity = 1,
             Type = Common.Constants.ProductType.New,

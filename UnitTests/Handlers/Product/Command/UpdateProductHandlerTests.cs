@@ -47,47 +47,58 @@ namespace UnitTests.Handlers.Product.Command
             Func<Task> func = async () => await _handler.Handle(request, It.IsAny<CancellationToken>());
 
             // Assert
-            var exception = await Assert.ThrowsAsync<NotFoundException>(func);
-            Assert.Equal("Product tapilmaid", exception.Message);
+            var exception = await Assert.ThrowsAsync<Common.Exceptions.NotFoundException>(func);
+            Assert.Contains("Product tapilmaid", exception.Errors);
         }
 
         [Fact]
         public async Task Handle_WhenValidationFails_ShouldThrowValidationException()
         {
             // Arrange
-            var request = new UpdateProductCommand { Id = It.IsAny<int>(), Name = "" }; 
-            var product = new Common.Entities.Product { Id = request.Id, Name = "Kohne ad" };
+            var request = new UpdateProductCommand { Id = 1, Name = "" };
+            var product = new Common.Entities.Product { Id = 1, Name = "Kohne ad" }; 
 
-            _productReadRepository.Setup(x => x.GetAsync(request.Id))
+            _productReadRepository.Setup(x => x.GetAsync(It.Is<int>(id => id == request.Id)))
                 .ReturnsAsync(product);
-
-            // Mock validation failure
-            var validator = new Mock<UpdateProductCommandValidator>();
-            validator.Setup(x => x.ValidateAsync(request, It.IsAny<CancellationToken>()))
-                .ReturnsAsync(new FluentValidation.Results.ValidationResult(new[]
-                {
-                    new FluentValidation.Results.ValidationFailure("Ad", "Ad vacibdir")
-                }));
 
             // Act
             Func<Task> func = async () => await _handler.Handle(request, It.IsAny<CancellationToken>());
 
             // Assert
-            var exception = await Assert.ThrowsAsync<ValidationException>(func);
-            Assert.Contains("Ad vacibdir", exception.Errors);
+            var exception = await Assert.ThrowsAsync<Common.Exceptions.ValidationException>(func);
+            Assert.Contains("Ad vacibdir", exception.Errors); 
         }
 
         [Fact]
         public async Task Handle_WhenFlowIsSucceeded_ShouldReturnResponseModel()
         {
             // Arrange
-            var request = new UpdateProductCommand { Id = It.IsAny<int>(), Name = "Yeni ad" };
-            var product = new Common.Entities.Product { Id = request.Id, Name = "Kohne ad" };
+            var request = new UpdateProductCommand
+            {
+                Id = 1,
+                Name = "Yeni ad",
+                Price = 120,
+                Description = "DescriptionDescriptionDescriptionDescription",
+                Quantity = 100,
+                Type = Common.Constants.ProductType.New,
+                Photo = "salam"
+            };
 
-            _productReadRepository.Setup(x => x.GetAsync(request.Id))
-                .ReturnsAsync(product);
+            var product = new Common.Entities.Product
+            {
+                Id = request.Id,
+                Name = "Kohne ad",
+                Price = 100,
+                Description = "DescriptionDescriptionDescriptionDescription",
+                CreatedDate = DateTime.Now,
+                Photo = "salam"
+            };
 
+            
+            _productReadRepository.Setup(x => x.GetAsync(request.Id)).ReturnsAsync(product);
             _mapper.Setup(x => x.Map(request, product));
+            _productWriteRepository.Setup(x => x.Update(product));
+            _unitOfWork.Setup(x => x.CommitAsync()).Returns(Task.CompletedTask);
 
             // Act
             var response = await _handler.Handle(request, It.IsAny<CancellationToken>());
@@ -96,5 +107,6 @@ namespace UnitTests.Handlers.Product.Command
             Assert.IsType<Response>(response);
             Assert.Equal("Product deyisildi", response.Message);
         }
+
     }
 }

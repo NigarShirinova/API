@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\API-task"
+    "\\Business",
+    "\\Business\\Services",
+    "\\Business\\Services\\Abstract",
+    "\\Business\\Services\\Concrete",
+    "\\UnitTests",
+    "\\UnitTests\\Handlers",
+    "\\UnitTests\\Handlers\\Product",
+    "\\UnitTests\\Handlers\\Product\\Command",
+    "\\UnitTests\\Handlers\\Product\\Query"
   ],
-  "SelectedNode": "\\Business",
+  "SelectedNode": "\\API-task.sln",
   "PreviewInSolutionExplorer": false
 }

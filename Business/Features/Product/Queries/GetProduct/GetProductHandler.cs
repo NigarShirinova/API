@@ -36,6 +36,8 @@ namespace Business.Features.Product.Queries.GetProduct
 			{
 				Data = _mapper.Map<ProductDto>(product)
 			};
+
+
 		}
 	}
 }

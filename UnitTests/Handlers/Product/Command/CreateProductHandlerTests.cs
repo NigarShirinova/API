@@ -41,7 +41,7 @@ namespace UnitTests.Handlers.Product.Command
 
 
             //Act
-            Func<Task> func = async () => _handler.Handle(request, It.IsAny<CancellationToken>());
+            Func<Task> func = async () => await _handler.Handle(request, It.IsAny<CancellationToken>());
 
             //Assert
             var exception = await Assert.ThrowsAsync<Common.Exceptions.ValidationException>(func);
@@ -51,17 +51,20 @@ namespace UnitTests.Handlers.Product.Command
         [Fact]
         public async Task Handle_WhenProductAlreadyExist_ShouldThrowValidationException()
         {
-            //Arrange
+            // Arrange
             var request = CreateProductHandlerMockData.CreateProductCommandV2;
 
-            _productReadRepository.Setup(x => x.GetByNameAsync(It.IsAny<string>()));
-            //Act
-            Func<Task> func = async () => _handler.Handle(request, It.IsAny<CancellationToken>());
+            _productReadRepository.Setup(x => x.GetByNameAsync(request.Name))
+                .ReturnsAsync(new Common.Entities.Product()); 
 
-            //Assert
+            // Act
+            Func<Task> func = async () => await _handler.Handle(request, It.IsAny<CancellationToken>());
+
+            // Assert
             var exception = await Assert.ThrowsAsync<Common.Exceptions.ValidationException>(func);
             Assert.Contains("Bu adda product var", exception.Errors);
         }
+
 
         [Fact]
         public async Task Handle_WhenFlowIsSucceeded_ShouldReturnResponseModel()

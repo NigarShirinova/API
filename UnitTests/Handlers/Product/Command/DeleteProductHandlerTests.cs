@@ -41,7 +41,7 @@ namespace UnitTests.Handlers.Product.Command
 
             // Assert
             var exception = await Assert.ThrowsAsync<NotFoundException>(func);
-            Assert.Equal("Product tapilmadi", exception.Message);
+            Assert.Contains("Product tapilmadi", exception.Errors);
         }
 
         [Fact]
