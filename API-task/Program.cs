@@ -14,6 +14,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Serilog;
+using Serilog.Configuration;
+using Serilog.Settings.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -105,9 +109,17 @@ builder.Services.AddScoped<IUserRoleService, UserRoleService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddApplicationExtensions();
 
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
 
 var app = builder.Build();
+
 app.UseMiddleware<CustomExceptionMiddleWare>();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

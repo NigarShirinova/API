@@ -11,3 +11,6 @@ namespace Business.Dtos.Auth
 		public string Token { get; set; }
 	}
 }
+
+
+

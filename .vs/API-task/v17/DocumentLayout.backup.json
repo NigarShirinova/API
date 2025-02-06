@@ -1,12 +1,122 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{57EA1EF1-67BA-4D1B-9EBB-758B29121D82}|API-task\\Presentation.csproj|c:\\users\\asus\\desktop\\api\\api-task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57EA1EF1-67BA-4D1B-9EBB-758B29121D82}|API-task\\Presentation.csproj|solutionrelative:api-task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57EA1EF1-67BA-4D1B-9EBB-758B29121D82}|API-task\\Presentation.csproj|c:\\users\\asus\\desktop\\api\\api-task\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{57EA1EF1-67BA-4D1B-9EBB-758B29121D82}|API-task\\Presentation.csproj|solutionrelative:api-task\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57EA1EF1-67BA-4D1B-9EBB-758B29121D82}|API-task\\Presentation.csproj|c:\\users\\asus\\desktop\\api\\api-task\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57EA1EF1-67BA-4D1B-9EBB-758B29121D82}|API-task\\Presentation.csproj|solutionrelative:api-task\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0083E762-C5E9-400C-BF18-D1182095C652}|Business\\Business.csproj|c:\\users\\asus\\desktop\\api\\business\\features\\product\\commands\\createproduct\\createproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0083E762-C5E9-400C-BF18-D1182095C652}|Business\\Business.csproj|solutionrelative:business\\features\\product\\commands\\createproduct\\createproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0083E762-C5E9-400C-BF18-D1182095C652}|Business\\Business.csproj|c:\\users\\asus\\desktop\\api\\business\\features\\product\\commands\\createproduct\\createproductcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0083E762-C5E9-400C-BF18-D1182095C652}|Business\\Business.csproj|solutionrelative:business\\features\\product\\commands\\createproduct\\createproductcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0083E762-C5E9-400C-BF18-D1182095C652}|Business\\Business.csproj|c:\\users\\asus\\desktop\\api\\business\\features\\product\\commands\\createproduct\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0083E762-C5E9-400C-BF18-D1182095C652}|Business\\Business.csproj|solutionrelative:business\\features\\product\\commands\\createproduct\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\API\\API-task\\Program.cs",
+              "RelativeDocumentMoniker": "API-task\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\API\\API-task\\Program.cs",
+              "RelativeToolTip": "API-task\\Program.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T20:28:47.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\API\\API-task\\appsettings.json",
+              "RelativeDocumentMoniker": "API-task\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\API\\API-task\\appsettings.json",
+              "RelativeToolTip": "API-task\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-01T19:31:34.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\API\\API-task\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "API-task\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\API\\API-task\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "API-task\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwEIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T19:18:07.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateProductHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductHandler.cs",
+              "RelativeDocumentMoniker": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductHandler.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductHandler.cs",
+              "RelativeToolTip": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwDIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T10:16:28.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateProductCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommandValidator.cs",
+              "RelativeDocumentMoniker": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommandValidator.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommandValidator.cs",
+              "RelativeToolTip": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommandValidator.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T10:15:35.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
+              "RelativeDocumentMoniker": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
+              "RelativeToolTip": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T10:15:11.735Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
