@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Business.Features.Product.Commands.CreateProduct;
+using Business.Services;
 using Business.Services.Abstract;
 using Business.Validators.Product;
 using Business.Wrappers;
@@ -23,16 +24,19 @@ namespace Business.Features.Product.Commands.UpdateProduct
 		private readonly IProductWriteRepository _productWriteRepository;
 		private readonly IMapper _mapper;
 		private readonly IProductReadRepository _productReadRepository;
+        private readonly IProducerService _producerService;
 
-		public UpdateProductHandler(IUnitOfWork unitOfWork,
+        public UpdateProductHandler(IUnitOfWork unitOfWork,
 			IProductWriteRepository productWriteRepository,
 			IProductReadRepository productReadRepository,
-			IMapper mapper)
+			IMapper mapper
+			IProducerService producerService)
 		{
 			_unitOfWork = unitOfWork;
 			_productWriteRepository = productWriteRepository;
 			_mapper = mapper;
 			_productReadRepository = productReadRepository;
+			_producerService = producerService;
 		}
 		public async Task<Response> Handle(UpdateProductCommand request, CancellationToken cancellationToken)
 		{
@@ -49,7 +53,9 @@ namespace Business.Features.Product.Commands.UpdateProduct
 			_productWriteRepository.Update(product);
 			await _unitOfWork.CommitAsync();
 
-			return new Response
+            await _producerService.ProduceAsync("Update", product);
+
+            return new Response
 			{
 				Message = "Product deyisildi"
 			};

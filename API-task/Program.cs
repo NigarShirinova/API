@@ -17,6 +17,7 @@ using System.Text;
 using Serilog;
 using Serilog.Configuration;
 using Serilog.Settings.Configuration;
+using Business.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -62,6 +63,7 @@ builder.Services.AddSwaggerGen(x =>
 
 builder.Services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
 
+
 builder.Services.AddAutoMapper(x =>
 {
 	x.AddProfile<ProductMappingProfile>();
@@ -103,6 +105,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IUserRoleService, UserRoleService>();
+builder.Services.AddScoped<IProducerService, ProducerService>();
 
 #endregion
 
